@@ -19,6 +19,9 @@ dependencies:
   react-dom:
     specifier: ^18.2.0
     version: registry.npmmirror.com/react-dom@18.2.0(react@18.2.0)
+  react-helmet:
+    specifier: ^6.1.0
+    version: registry.npmmirror.com/react-helmet@6.1.0(react@18.2.0)
   react-query:
     specifier: ^3.39.3
     version: registry.npmmirror.com/react-query@3.39.3(react-dom@18.2.0)(react@18.2.0)
@@ -39,6 +42,9 @@ devDependencies:
   '@types/react-dom':
     specifier: ^18.0.11
     version: registry.npmmirror.com/@types/react-dom@18.0.11
+  '@types/react-helmet':
+    specifier: ^6.1.6
+    version: registry.npmmirror.com/@types/react-helmet@6.1.6
   '@typescript-eslint/eslint-plugin':
     specifier: ^5.57.1
     version: registry.npmmirror.com/@typescript-eslint/eslint-plugin@5.57.1(@typescript-eslint/parser@5.57.1)(eslint@8.38.0)(typescript@5.0.2)
@@ -653,6 +659,14 @@ packages:
     resolution: {integrity: sha512-O38bPbI2CWtgw/OoQoY+BRelw7uysmXbWvw3nLWO21H1HSh+GOlqPuXshJfjmpNlKiiSDG9cc1JZAaMmVdcTlw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/react-dom/-/react-dom-18.0.11.tgz}
     name: '@types/react-dom'
     version: 18.0.11
+    dependencies:
+      '@types/react': registry.npmmirror.com/@types/react@18.0.28
+    dev: true
+
+  registry.npmmirror.com/@types/react-helmet@6.1.6:
+    resolution: {integrity: sha512-ZKcoOdW/Tg+kiUbkFCBtvDw0k3nD4HJ/h/B9yWxN4uDO8OkRksWTO+EL+z/Qu3aHTeTll3Ro0Cc/8UhwBCMG5A==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/@types/react-helmet/-/react-helmet-6.1.6.tgz}
+    name: '@types/react-helmet'
+    version: 6.1.6
     dependencies:
       '@types/react': registry.npmmirror.com/@types/react@18.0.28
     dev: true
@@ -2139,6 +2153,16 @@ packages:
     engines: {node: '>= 0.8.0'}
     dev: true
 
+  registry.npmmirror.com/prop-types@15.8.1:
+    resolution: {integrity: sha512-oj87CgZICdulUohogVAR7AjlC0327U4el4L6eAvOqCeudMDVU0NThNaV+b9Df4dXgSP1gXMTnPdhfe/2qDH5cg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/prop-types/-/prop-types-15.8.1.tgz}
+    name: prop-types
+    version: 15.8.1
+    dependencies:
+      loose-envify: registry.npmmirror.com/loose-envify@1.4.0
+      object-assign: registry.npmmirror.com/object-assign@4.1.1
+      react-is: registry.npmmirror.com/react-is@16.13.1
+    dev: false
+
   registry.npmmirror.com/punycode@2.3.0:
     resolution: {integrity: sha512-rRV+zQD8tVFys26lAGR9WUuS4iUAngJScM+ZRSKtvl5tKeZ2t5bvdNFdNHBW9FWR4guGHlgmsZ1G7BSm2wTbuA==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/punycode/-/punycode-2.3.0.tgz}
     name: punycode
@@ -2162,6 +2186,33 @@ packages:
       loose-envify: registry.npmmirror.com/loose-envify@1.4.0
       react: registry.npmmirror.com/react@18.2.0
       scheduler: registry.npmmirror.com/scheduler@0.23.0
+    dev: false
+
+  registry.npmmirror.com/react-fast-compare@3.2.1:
+    resolution: {integrity: sha512-xTYf9zFim2pEif/Fw16dBiXpe0hoy5PxcD8+OwBnTtNLfIm3g6WxhKNurY+6OmdH1u6Ta/W/Vl6vjbYP1MFnDg==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/react-fast-compare/-/react-fast-compare-3.2.1.tgz}
+    name: react-fast-compare
+    version: 3.2.1
+    dev: false
+
+  registry.npmmirror.com/react-helmet@6.1.0(react@18.2.0):
+    resolution: {integrity: sha512-4uMzEY9nlDlgxr61NL3XbKRy1hEkXmKNXhjbAIOVw5vcFrsdYbH2FEwcNyWvWinl103nXgzYNlns9ca+8kFiWw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/react-helmet/-/react-helmet-6.1.0.tgz}
+    id: registry.npmmirror.com/react-helmet/6.1.0
+    name: react-helmet
+    version: 6.1.0
+    peerDependencies:
+      react: '>=16.3.0'
+    dependencies:
+      object-assign: registry.npmmirror.com/object-assign@4.1.1
+      prop-types: registry.npmmirror.com/prop-types@15.8.1
+      react: registry.npmmirror.com/react@18.2.0
+      react-fast-compare: registry.npmmirror.com/react-fast-compare@3.2.1
+      react-side-effect: registry.npmmirror.com/react-side-effect@2.1.2(react@18.2.0)
+    dev: false
+
+  registry.npmmirror.com/react-is@16.13.1:
+    resolution: {integrity: sha512-24e6ynE2H+OKt4kqsOvNd8kBpV65zoxbA4BVsEOB3ARVWQki/DHzaUoC5KuON/BiccDaCCTZBuOcfZs70kR8bQ==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/react-is/-/react-is-16.13.1.tgz}
+    name: react-is
+    version: 16.13.1
     dev: false
 
   registry.npmmirror.com/react-query@3.39.3(react-dom@18.2.0)(react@18.2.0):
@@ -2212,6 +2263,17 @@ packages:
       react: '>=16.8'
     dependencies:
       '@remix-run/router': registry.npmmirror.com/@remix-run/router@1.6.1
+      react: registry.npmmirror.com/react@18.2.0
+    dev: false
+
+  registry.npmmirror.com/react-side-effect@2.1.2(react@18.2.0):
+    resolution: {integrity: sha512-PVjOcvVOyIILrYoyGEpDN3vmYNLdy1CajSFNt4TDsVQC5KpTijDvWVoR+/7Rz2xT978D8/ZtFceXxzsPwZEDvw==, registry: https://registry.npm.taobao.org/, tarball: https://registry.npmmirror.com/react-side-effect/-/react-side-effect-2.1.2.tgz}
+    id: registry.npmmirror.com/react-side-effect/2.1.2
+    name: react-side-effect
+    version: 2.1.2
+    peerDependencies:
+      react: ^16.3.0 || ^17.0.0 || ^18.0.0
+    dependencies:
       react: registry.npmmirror.com/react@18.2.0
     dev: false
 

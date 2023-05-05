@@ -16,7 +16,7 @@ const set = <Entity = any, Output = Entity, Value = any>(
   } else {
     clone = { ...entity };
   }
-
+  // @ts-ignore
   clone[key] = set(clone[key], restPath, value);
 
   return clone as Output;
